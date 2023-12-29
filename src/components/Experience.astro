@@ -1,0 +1,59 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    company: "Pragma S.A",
+    date: "Agosto 2020 - Octubre 2023, 3 Años y 2 meses",
+    title: "Desarrollador de software",
+    description:
+      "Mi recorrido por esta empresa dio inicio a mi camino en el mundo del desarrollo de software. Inicié mis prácticas como tecnólogo aquí y, al finalizar, tuve la oportunidad de continuar ejerciendo. Aprendí sobre muchas tecnologías y tuve la oportunidad de trabajar con varios clientes.",
+    listClient: [
+      {
+        name: "Pequeñin",
+        url: "https://www.pequenin.com.co/",
+        src:"/pequenin.webp",
+      },
+      {
+        name: "Grupo Familia",
+        url: "https://www.grupofamilia.com/",
+        src:
+          "/grupo_familia.webp",
+      },
+      {
+        name: "Nosotras V-App",
+        url:
+          "https://www.nosotrasonline.com.co/entre-nosotras/cuidado-femenino/descubre-la-nueva-v-app-y-todas-sus-sorpresas-con-nosotras-colombia/",
+        src:
+          "/nosotras.webp",
+      },
+      {
+        name: "Banistmo",
+        url: "https://www.banistmo.com/",
+        src:
+          "/banistmo.webp",
+      },
+      {
+        name: "Comfama",
+        url: "https://www.comfama.com/",
+        src:
+          "/comfama.webp",
+      },
+      {
+        name: "Bancolombia",
+        url: "https://www.bancolombia.com/",
+        src:
+          "/bancolombia.webp",
+      },
+    ],
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {EXPERIENCE.map((experience) => (
+    <li class="mb-10 ms-4">
+      <ExperienceItem {...experience} />
+    </li>
+  ))}
+</ol>

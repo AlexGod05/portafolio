@@ -1,0 +1,13 @@
+---
+interface Props {
+    url: string
+    src: string
+    name: string
+}
+
+const {url, src, name} = Astro.props
+---
+
+<div class="hover:scale-110 max-w-64">
+    <a href={url} target="_blank"><img src={src} alt={name}></a>
+</div>

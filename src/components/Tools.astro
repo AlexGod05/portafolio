@@ -1,0 +1,63 @@
+
+---
+const TOOLS = [
+    {
+        name: "Java",
+        rating: "75%"
+    },
+    {
+        name: "AWS",
+        rating: "70%"
+    },
+    {
+        name: "GIT",
+        rating: "80%"
+    },
+    {
+        name: "Kubernetes",
+        rating: "70%"
+    },
+    {
+        name: "Azure DevOps",
+        rating: "80%"
+    },
+    {
+        name: "Spring Framework",
+        rating: "70%"
+    },
+    {
+        name: "SQL",
+        rating: "70%"
+    },
+    {
+        name: "NoSQL",
+        rating: "60%"
+    },
+    {
+        name: "Docker",
+        rating: "65%"
+    },
+    {
+        name: "Scrum",
+        rating: "80%"
+    },
+    ];
+---
+
+
+
+
+
+<div class="gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-2 ml-3">
+    {TOOLS.map((tool) => (
+    <dl>
+        <dt class="text-sm font-medium text-white dark:text-gray-400">{tool.name}</dt>
+        <dd class="flex items-center mb-3">
+            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 me-2">
+                <div class="bg-blue-800 h-2.5 rounded dark:bg-blue-500" style={{ width: `${tool.rating}` }}></div>
+            </div>
+            <span class="text-sm font-medium text-white dark:text-gray-400">{tool.rating}</span>
+        </dd>
+    </dl>
+    ))}
+</div>

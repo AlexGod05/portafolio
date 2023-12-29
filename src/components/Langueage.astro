@@ -1,0 +1,26 @@
+---
+import Eeuu from "./icons/eeuu.astro";
+
+const LANGUAGE = [{
+    leaguage: "Inglés",
+    level: "A1",
+    img: "/flagEeuu.webp"
+},
+{
+    leaguage: "Español",
+    level: "Nativo",
+    img: "/flagEspana.webp"
+}]
+---
+
+
+<div class="flex items-center gap-4">
+    {LANGUAGE.map((language) => (
+    <img src={language.img} alt="" class="h-auto max-w-32">
+        <div class="font-medium dark:text-white">
+            <div>{language.leaguage}</div>
+            <div class="text-sm text-gray-500 dark:text-gray-400">{language.level}</div>
+        </div>
+    ))}
+    
+</div>

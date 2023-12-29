@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Badge from '../components/Badge.astro';
+import SocialPill from '../components/SocialPill.astro';
+import LinkedInIcon from '../components/icons/Linkedin.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+import MailIcon from '../components/icons/Mail.astro';
+import Experience from '../components/Experience.astro';
+import Education from '../components/Education.astro';
+import UserIcon from '../components/icons/User.astro';
+import BriefcaseIcon from '../components/icons/Briefcase.astro'
+import BooksIcon from '../components/icons/Books.astro';
+import LanguageIcon from '../components/icons/Language.astro'
+import Tools from '../components/Tools.astro'
+import ToolIcon from '../components/icons/Tool.astro';
+import Langueage from '../components/Langueage.astro';
+---
+
+<Layout title="Portafolio Claiderman Lozano - Desarrollador de software con 3 años de experiencia" description="Tecnologo en analisis y desarrollo de sistemas de informacion, enfocado en el BackEnd Java, Pero tambien con ganas de aprender mucho mas.">
+	<main class="px-4">
+		
+		<SectionContainer class="py-20 pb-16">
+			<div class="flex items-center gap-4 mb-8">
+				<img class="rounded w-36 h-36" 
+					src="/claiderman_lozano.webp" alt="Claiderman Alexander Lozano Cardona">
+				<div>
+					<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-3 lg:pb-1 ">
+						Claiderman Alexander Lozano Cardona <a
+						href="https://linkedin.com/in/midudev"
+						target="_blank"
+						rel="noopener"
+						class="flex justify-center items-center"
+						></a>
+					</h1>
+					<p class="my-4 text-lg text-yellow-200">Desarrollador de software 
+						<span>
+							<a href="https://www.linkedin.com/in/claiderman-alexander-lozano-cardona-292a19174/"><Badge>Disponible para trabajar</Badge></a>
+						</span>
+					</p>
+				</div>				
+			</div>
+			
+			<div id="sobre-mi">
+				<h2 class="text-white/70 text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+					<UserIcon class="size-7" />
+					Sobre mí
+				</h2>
+			</div>
+			<p class="mb-4 text-lg font-normal border-gray-200 dark:border-gray-200">
+				Tecnólogo en Análisis y Desarrollo de Sistemas de Información con sólidos conocimientos en la gestión de microservicios a través de API REST, el manejo de bases de datos y la utilización de servicios en la nube de AWS. Destaco por mi agilidad para asimilar nuevas herramientas y tecnologías de información, demostrando un enfoque proactivo hacia el mejoramiento continuo y la adaptación fluida a diversos entornos.
+			</p>
+			<nav class="flex gap-4 mt-8 flex-wrap">
+				<SocialPill href="https://www.linkedin.com/in/claiderman-alexander-lozano-cardona-292a19174/">
+				  <LinkedInIcon class="size-4 md:size-6" />
+				   LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/AlexGod05">
+				  <GitHubIcon class="size-4 md:size-6" />
+				   GitHub
+				</SocialPill>
+				<SocialPill href="mailto:lozanocardona200938@gmail.com">
+					<MailIcon class="size-4 md:size-6" />
+					 Correo
+				</SocialPill>
+			</nav>
+		</SectionContainer>
+
+		<SectionContainer id="experiencia">
+			<h2 class="text-white/70 text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<BriefcaseIcon class="size-7" />
+				Experiencia
+			</h2>
+			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="edudacion">
+			<h2 class="text-white/70 text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<BooksIcon class="size-7" />
+				Educación
+			</h2>
+			<Education />
+		</SectionContainer>
+
+		<SectionContainer id="idiomas">
+			<h2 class="text-white/70 text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<LanguageIcon class="size-7" />
+				Idiomas
+			</h2>
+			<Langueage />
+		</SectionContainer>
+
+		<SectionContainer id="herramientas">
+			<h2 class="text-white/70 text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<ToolIcon class="size-7" />
+				Herramientas
+			</h2>
+			<Tools />
+		</SectionContainer>
+
+
+		
+	</main>
+</Layout>
